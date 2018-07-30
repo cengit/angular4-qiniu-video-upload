@@ -1,0 +1,4 @@
+<input type="file" [attr.multiple]="multiple ? true : null" (change) = "getToken()">
+<button type="button" (click)="formUpload()">表单上传</button>
+<div *ngIf="loading">loading</div>
+<pre>{{data| json}}</pre>

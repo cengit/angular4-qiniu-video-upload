@@ -1,0 +1,6 @@
+<input  type="file" [attr.multiple]="multiple ? true : null">
+<button md-raised-button  color="primary" (click)="formUpload()">表单上传</button>
+<button md-raised-button  color="primary" (click)="blockUpload()">分片上传</button>
+<pre>{{progress}}</pre>
+<div>{{percentDone}}</div>
+<!-- <md-progress-bar *ngIf="loading" mode="Determinate" value={{percentDone}}></md-progress-bar> -->
